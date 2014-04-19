@@ -43,7 +43,7 @@ public class MainActivity extends Activity implements OnScrollListener {
 		adapter = new InfiniteScrollAdapter<String>(this, vals, 20, 10);
 		listView.setAdapter(adapter);
 		listView.setOnScrollListener(this); //listen for a scroll movement to the bottom
-		progressBar.setVisibility((10 < vals.length)? View.VISIBLE : View.GONE);
+		progressBar.setVisibility((20 < vals.length)? View.VISIBLE : View.GONE);
 	}
 	
 	@Override
